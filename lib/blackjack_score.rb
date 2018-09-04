@@ -7,7 +7,7 @@ def blackjack_score(hand)
   score = 0
   hand.each do |card|
 
-    unless VALID_CARDS.includes?(card)
+    unless VALID_CARDS.include?(card)
       raise ArgumentError, 'Invalid card'
     end
 

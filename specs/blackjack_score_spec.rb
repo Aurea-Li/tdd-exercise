@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'minitest'
 require 'minitest/spec'
 require 'minitest/autorun'
@@ -49,6 +52,7 @@ describe 'Blackjack Score' do
 
   it 'raises an ArgumentError for invalid cards' do
 
+    expect (blackjack_score([]))
   end
 
   it 'raises an ArgumentError for scores over 21' do
